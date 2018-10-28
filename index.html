@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>voice synthesizer test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  
+</head>
+<body>
+  
+
+  <div class="container">
+    <h2 class="title">
+     Magic Voice
+    </h2>
+    <div class="main">
+      <form id="form">
+        <div class="input_area">
+          <textarea class="txt" > </textarea>
+          <select class="selectElement" name="voiceSelect" id="voiceSelect">
+          </select>
+          <span class="choose_langudge">Choose  Langudge </span>
+          <input class="speakIt" type="submit" value="Speak It">
+        </div>
+
+        
+      </form>
+      <div class="funpart">
+        <div class="effect">
+          <div class="pitch controler">
+            <label for="">Pitch</label>
+            <input type="range" name="" id="pitch" min="0.2" max="2" value="1" step=".1">
+            <span class="pitchValue"></span>
+          </div>
+          <div class="rate controler">
+            <label for=""> Rate</label>
+            <input type="range" name="" id="rate" min="0" max="2" value="1" step=".1">
+            <span class="rateValue"></span>
+          </div>
+          <div class="volume controler">
+            <label for=""> Volume</label>
+            <input type="range" name="" id="volume" min="0" max="1" value=".7" step=".1">
+            <span class="volumeValue"></span>
+          </div>
+        </div>
+        <div class="talkingGuy">
+
+        </div> 
+      </div>
+         
+    </div>    
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
